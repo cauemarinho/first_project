@@ -1,0 +1,1 @@
+select COUNT(customer_id) as count_customers from {{ ref('stg_customers') }}

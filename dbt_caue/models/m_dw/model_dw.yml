@@ -1,0 +1,8 @@
+version: 2
+
+models:
+  - name: customers
+    config:
+      dataset: dbt_dw
+    columns: 
+      - name: count_customers

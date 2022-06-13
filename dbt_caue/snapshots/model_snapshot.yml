@@ -1,0 +1,11 @@
+version: 2
+
+models:
+  - name: snapshot_user
+    config:
+      dataset: dbt_snapshot
+    columns:
+      - name: id
+      - name: name
+      - name: qualification
+      - name: last_date_updated

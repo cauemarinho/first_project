@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: increment
+    config:
+      dataset: dbt_incremental
+    loaded_at_field: created_at
+    columns:
+      - name: id
+      - name: name
+      - name: qualification
+      - name: created_at
+      - name: maxtime
+
+  - name: increment_count
+    config:
+      dataset: dbt_incremental
+    loaded_at_field: created_at
+    columns:
+      - name: created_at
+      - name: number_rows
+      - name: maxtime     

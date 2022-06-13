@@ -1,0 +1,9 @@
+version: 2
+
+seeds:
+  - name: 'dbt_raw'
+    description: Database for raw data.
+    tables:
+      - name: raw_customers
+      - name: raw_orders
+      - name: raw_payments

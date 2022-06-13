@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: all_dates
+    config:
+      dataset: dbt_date

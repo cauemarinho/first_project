@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: python_gen
+    dataset: python_generate
+    tables:
+      - name: raw_data
+        columns:
+          - name: id
+          - name: name
+          - name: qualification
+          - name: created_at 

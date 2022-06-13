@@ -1,0 +1,32 @@
+name: 'dbt_poc'
+
+config-version: 2
+version: '0.1'
+
+profile: 'bigquery_db'
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+test-paths: ["tests"]
+analysis-paths: ["analysis"]
+macro-paths: ["macros"]
+target-path: "target"
+
+clean-targets:
+    - "target"
+    - "dbt_packages"
+    - "logs"
+
+require-dbt-version: [">=1.0.0", "<2.0.0"]
+
+seeds:
+  dataset: dbt_raw
+
+models:
+  dbt_poc:
+    m_dw:
+      +materialized: table
+    m_staging:
+      +materialized: view
+
+
